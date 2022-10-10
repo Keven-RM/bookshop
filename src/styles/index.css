@@ -1,0 +1,76 @@
+:root {
+    --white: #F9F9F9;
+}
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#root {
+    padding: 0 30px;
+    background-color: var(--white);
+    position: relative;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #root {
+        padding: 30px 80px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 280px) and (max-width: 360px) { 
+    #root {
+        padding: 30px 10px;
+    }
+    
+    table {
+        min-width: 0px !important;
+    }
+    
+    table thead tr th {
+        font-size: 12px ;
+        width: 70px !important;
+        text-align: center;
+    }
+    
+    table tr td {
+        height: 80px !important;
+        overflow: hidden;
+        max-width: 80px !important;
+    }
+
+    table tbody tr .actions {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    table tbody tr .actions svg, 
+    table tr .actions a {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 0 !important;
+    }
+
+    ul li div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main ul li svg {
+        height: 20px !important;
+        width: 20px !important; 
+    }
+
+}
